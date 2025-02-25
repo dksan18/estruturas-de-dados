@@ -2,7 +2,6 @@
 #include <iostream>
 
 int main(int argc, char const* argv[]) {
-  // Exemplo de uso:
   VectorList<int> lista(15);
 
   lista.push_back(10);

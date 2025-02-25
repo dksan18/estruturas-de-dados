@@ -177,4 +177,3 @@ void VectorList<T>::print() const {
   }
   std::cout << std::endl;
 }
-#include "../include/linked_list.hpp"
