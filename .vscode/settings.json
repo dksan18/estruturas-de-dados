@@ -57,5 +57,6 @@
         "sstream": "cpp",
         "text_encoding": "cpp",
         "typeinfo": "cpp"
-    }
+    },
+    "terminal.integrated.allowChords": false
 }
