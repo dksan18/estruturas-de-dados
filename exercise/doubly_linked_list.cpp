@@ -7,17 +7,18 @@ int main() {
     myList.push_back(10);
     myList.push_back(20);
     myList.push_back(30);
-    std::cout << "Lista após push_back: ">;
+    myList.push_back(30);
+    std::cout << "Lista depois push_back: ">;
     myList.print();
 
     myList.push_front(5);
-    std::cout << "Lista após push_front: ";
+    std::cout << "Lista depois push_front: ";
     myList.print();
 
     auto it = myList.begin();
     ++it; // Aponta para o segundo elemento (10)
     myList.insert(it, 15);
-    std::cout << "Lista após insert: ";
+    std::cout << "Lista depois insert: ";
     myList.print(); // Saída: 5 15 10 20 30
 
     auto findIt = myList.find(20);
@@ -37,11 +38,11 @@ int main() {
 
 
     myList.pop_back();
-    std::cout << "Lista após pop_back: ";
+    std::cout << "Lista depois pop_back: ";
     myList.print();
 
     myList.pop_front();
-    std::cout << "Lista após pop_front: ";
+    std::cout << "Lista depois pop_front: ";
     myList.print();
 
 
@@ -49,12 +50,12 @@ int main() {
     ++eraseIt1; // Aponta para 10
     auto eraseIt2 = myList.end();
     myList.erase(eraseIt1, eraseIt2);
-    std::cout << "Lista após erase: ";
+    std::cout << "Lista depois de erase: ";
     myList.print();
 
 
     myList.clear();
-    std::cout << "Lista após clear: ";
+    std::cout << "Lista depois clear: ";
     myList.print();
 
     std::cout << "Tamanho da lista: " << myList.size() << std::endl;
