@@ -3,15 +3,12 @@
 
 int main(int argc, char const* argv[]) {
   // Exemplo de uso:
-  VectorList<int> lista(5);
+  VectorList<int> lista(15);
 
   lista.push_back(10);
   lista.push_back(20);
   lista.push_back(30);
   lista.push_back(30);
-  lista.push_back(30);
-  lista.push_back(2);
-  lista.push_back(2);
 
   std::cout << "Tamanho da lista: " << lista.size() << std::endl;
   std::cout << "Capacidade da lista: " << lista.capacity() << std::endl;

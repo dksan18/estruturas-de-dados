@@ -1,4 +1,5 @@
 #include "../include/linked_list.hpp"
+#include <iostream>
 
 int main() {
     LinkedList<int> minhaLista;

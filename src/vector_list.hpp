@@ -20,7 +20,7 @@ template <class T>
 VectorList<T>::VectorList(const VectorList &list)
     : _size(list._size), _capacity(list._capacity) {
   data = new T[_capacity];
-  for (size_t i = 0; i < _size; ++i) {.
+  for (size_t i = 0; i < _size; ++i) {
     data[i] = list.data[i];
   }
 }
@@ -177,3 +177,4 @@ void VectorList<T>::print() const {
   }
   std::cout << std::endl;
 }
+#include "../include/linked_list.hpp"
