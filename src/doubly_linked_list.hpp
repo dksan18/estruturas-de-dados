@@ -92,13 +92,10 @@ void DoublyLinkedList<T>::insert(typename DoublyLinkedList<T>::iterator pos,
     head->prev = new_node;
     head = new_node;
   } else if (pos.node == nullptr) {
-    // Inserting at end(), which is past the end of the list.  This needs to be
-    // handled like push_back
     new_node->prev = tail;
     tail->next = new_node;
     tail = new_node;
   } else {
-    // Inserting in the middle
     Node* current = pos.node;
     new_node->next = current;
     new_node->prev = current->prev;
@@ -349,7 +346,6 @@ size_t DoublyLinkedList<T>::Iterator<U>::operator-(
   }
 
   if (temp.node == nullptr && this->node != nullptr) {
-    // The iterators are not in the same list.
     throw std::invalid_argument("Iterators are not in the same list.");
   }
 
